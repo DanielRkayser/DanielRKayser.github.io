@@ -1,3 +1,6 @@
+body{
+    background-color: darkslategray;
+}
 div{
     background-color: black;
     color:goldenrod;   /*px para pixel e % para porcentagem*/
@@ -5,4 +8,15 @@ div{
     margin: 10px;/*colocar travessão e direção(top under left right) ou X(top) X(right) X(under)  X(left) NESSA ORDEM, NÃO ALTERAR A MENOS QUE ESTEJA ERRADO*/
     padding:10px; /*o comentário acima conta para isso também*/
     border-radius: 15px; /*border radius arredonda a borda, margin distancia, padding tamanho da div, width largura, heigt tamanho*/
+    border: 2px solid darkcyan;/*mudar o solid por dotted, dashed, double, inset, outset ou botar border-top, border right, left ou botton*/
+    text-align: center;
+    display: inline-block,
+}
+
+img{
+    border: 5px double darkred;
+    height: 100px ;
+    border-radius:25% ;
+    margin: 5px;
+    padding: 5px;
 }

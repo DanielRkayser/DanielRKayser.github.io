@@ -1,0 +1,21 @@
+div{
+    background-color: grey;/*https://imgur.com/a/Mto2JAw*/
+    color:gold;
+    border-radius: 30px;
+    border-left: 10px dashed lightgray;
+    border-bottom:10px dashed lightgray;
+    width: 150px;
+    height:65px;
+    display: inline-block;
+    font-family: Arial;
+    font-size:30px ;
+    padding: 15px;
+    text-align:center;
+    margin: 15px;
+}
+img{
+    border-radius: 50%;
+    border:15px dotted greenyellow;
+    height: 140px;
+    
+}
