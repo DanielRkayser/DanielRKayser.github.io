@@ -1,0 +1,29 @@
+.primeiro{
+    background-color:darkcyan;
+    color:darkorange;
+    border:4px double goldenrod;
+    padding:10px;
+    text-align:center;
+}
+.banner{
+    background-color:darkorchid;
+    color:lightslategray;
+    border:4px inset lightblue;
+    padding:10px;
+    text-align:center;
+    margin: 2px 0px;
+}
+#borda{
+    border-radius: 30px;
+}
+#texto{
+    color:darkred;
+}
+#largura{
+    width:300px;
+}
+.primeiro:hover{
+    background-color:darkred;
+    color:cornflowerblue;
+    border:25px dashed paleturquoise
+}
