@@ -1,7 +1,7 @@
 div{
     background-color: grey;/*https://imgur.com/a/Mto2JAw*/
-    color:gold;
-    border-radius: 30px;
+    color:lightgrey;
+    border-radius:5px 30px;
     border-left: 10px dashed lightgray;
     border-bottom:10px dashed lightgray;
     width: 150px;
@@ -17,5 +17,15 @@ img{
     border-radius: 50%;
     border:15px dotted greenyellow;
     height: 140px;
-    
+    margin-left: 35px;
+    padding: 20px;
+}
+body{
+    background-color: darkslategrey;
+}
+p{
+    color:gold;
+    margin-left:25px;
+    font-family: Arial;
+    font-size:20px
 }
