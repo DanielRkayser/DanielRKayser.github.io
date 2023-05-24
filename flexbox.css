@@ -1,0 +1,24 @@
+
+.menu{
+    background-color: darkslategray;
+    color:darkgoldenrod;
+    border:5px double goldenrod;
+    display: flex;/*deixa o elemento flexível*/
+    flex-direction: row; /*mudar para row, column, reverse-row,reverse-column*/
+    justify-content: center;/*pode ser center, left, right, space-around, space-evenly, space between*/
+    align-items:center;/*mudar para center, flex-end, flex-start*/
+    gap:30px;
+    padding: 30px;
+    flex-wrap: wrap;/*o wrap-reverse faz a mesma coisa só que invertido, ele cria a linha em cima*/
+}
+.menu div{
+    border: 2px dashed darkred;
+    background-color: rgb(34, 34, 34);
+    border-radius:15px;
+    width:50px;
+    height:50px;
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
