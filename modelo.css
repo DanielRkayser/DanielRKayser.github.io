@@ -1,0 +1,26 @@
+.navbar{
+    background-color: darkcyan;
+    height: 90px;
+    display:flex;
+    padding: 30px;
+    gap:30px;
+    align-items: center;
+}
+.navbar img{
+    width: 120px;
+    height:70px
+}
+body{
+    background-color: darkslategrey;
+    margin:0px;
+}
+.navbar input{
+    height:30px;
+    width: 270px;
+    border-radius: 25px;
+}
+.navbar a{
+    color:darkred ;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
