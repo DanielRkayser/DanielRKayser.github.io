@@ -1,0 +1,27 @@
+.navbar{
+    background-color: darkslategray;
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.itens{
+    background-color: aliceblue;
+    display: flex;
+    padding: 10px;
+    border-radius: 5px;
+    border:4px solid aliceblue;
+}
+.itens a{
+    color: rgb(68, 67, 67);
+    text-decoration: none;
+}
+.itens a:hover{
+    text-decoration: underline;
+    text-decoration-color: darkgoldenrod;
+    text-decoration-style: double ;
+}
+.itens:hover{
+    border: 4px double darkorange;
+}
