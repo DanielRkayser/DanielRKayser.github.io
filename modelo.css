@@ -1,50 +1,57 @@
-/*https://fontawesome.com/v4/icons/*/
 .navbar{
     background-color: darkcyan;
+    height: 150px;
     display:flex;
-    height: 120px;
-    align-items:center;
+    padding: 30px;
+    gap:0px;
+    align-items: center;
     justify-content: space-around;
+}
+.navbar img{
+    width: 160px;
+    height:140px
 }
 body{
-    background-color: darkslategray;
-    margin: 0px;
+    background-color: darkslategrey;
+    margin:0px;
+    font-family:Arial;
+    font-size:large;
+    justify-content: center;
 }
 .navbar input{
-    height: 40px;
-    width:240px;
-    justify-content: space-around;
-    border-radius:25px;
-    font-size:large;
+    height:30px;
+    width: 425px;
+    border-radius: 25px;
 }
 .navbar a{
-    text-decoration: none;
-    color: darkred;
-    font-size: large;
-}
-.navbar a:hover{
+    color:darkred ;
     text-decoration: underline;
     text-decoration-style: wavy;
 }
-.card{
-    background-color: darkblue;
-    width:45vh;
-    display: flex;
+.texto{
+    margin:30px;
     align-items:center;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin-top:50px ;
-    margin-left: 50px;
-    border:4px darkgoldenrod double;
-
+    justify-content:center;
+    font-family:Arial;
+    font-size:large;
+    color:aliceblue;
 }
-.text{
-    display: flex;
-    flex-wrap:wrap;
-    width:75vh;
-    background-color:yellowgreen;
+label{
+    color:darkred;
 }
-.body{
-    display: flex;
+.card{
+    width:210px;
+    height:275px;
+    background-color:rgb(16, 27, 27);
+    margin:50px;
+    font-size: medium;
+    color:aliceblue;
+}
+.card img{
+    height:250px;
+    width:200px
+}
+.cards{
+    display:flex;
     flex-wrap:wrap;
 }
