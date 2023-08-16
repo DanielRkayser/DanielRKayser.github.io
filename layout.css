@@ -9,6 +9,10 @@ body{
     width:100%;
     top:0px; /*trocar por left, right ou bottom*/
     opacity:1; /*deixa transparente 0 é invisivel e 1 é normal*/
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
 }
 .corpo{
     display: flex;
@@ -25,4 +29,33 @@ body{
 .main{
     background-color: darkred;
     width: calc(100% - 205px);
+}
+.navbar a, .navbar div{
+    background-color:darkcyan ;
+    display:flex;
+    align-items: center;
+    justify-content:space-around;
+    width:50px;
+    border-radius:5px;
+    color:black;
+    text-decoration: none;
+}
+.navbar div{
+    display: none;
+}
+@media (max-width: 500px){
+    .lateral{
+        display: none;
+    }
+    .main{
+        width:100%;
+    }
+}
+@media (max-width:450px){
+    .navbar a{
+        display: none;
+    }
+    .navbar div{
+        display:flex;
+    }
 }
