@@ -1,0 +1,12 @@
+.navbar{
+    background-color: darkslategray;
+    justify-content: space-around;
+    align-items: center;
+}
+.navbar img{
+    width:550px;
+    height:100px;
+}
+body{
+    margin: 0px;
+}
