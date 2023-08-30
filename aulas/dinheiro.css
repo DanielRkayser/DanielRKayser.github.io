@@ -1,0 +1,64 @@
+body{
+    margin:0
+}
+
+.sim{
+    background-color: darkslategrey;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-family:Arial;
+    height:15vh;
+    color: aquamarine;
+    
+}
+img{
+    height:55px;
+    width:115px;
+}
+.diferente{
+    background-color:mediumseagreen;
+    display:flex;
+    flex-direction:column;
+    width:20%;
+    font-family:arial;
+    align-items:top;
+    color:white;
+    font-size: 30px;
+    padding: 20px;
+}
+.branco{
+    font-family: Arial;
+    font-size: 22px;
+    padding: 20px;
+    color: darkslategray;
+}
+.corpo{
+    display: flex;
+    height: 85vh;
+}
+.letras{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.letra{
+    background-color: mediumseagreen;
+    width: 125px;
+    height: 125px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 12px;
+    color: white;
+    justify-content: center;
+}
+
+.letra:hover{
+    background-color: darkslategrey;
+    text-decoration: underline;
+}

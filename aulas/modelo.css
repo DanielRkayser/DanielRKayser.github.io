@@ -1,0 +1,57 @@
+.navbar{
+    background-color: darkcyan;
+    height: 150px;
+    display:flex;
+    padding: 30px;
+    gap:0px;
+    align-items: center;
+    justify-content: space-around;
+}
+.navbar img{
+    width: 160px;
+    height:140px
+}
+body{
+    background-color: darkslategrey;
+    margin:0px;
+    font-family:Arial;
+    font-size:large;
+    justify-content: center;
+}
+.navbar input{
+    height:30px;
+    width: 425px;
+    border-radius: 25px;
+}
+.navbar a{
+    color:darkred ;
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+.texto{
+    margin:30px;
+    align-items:center;
+    justify-content:center;
+    font-family:Arial;
+    font-size:large;
+    color:aliceblue;
+}
+label{
+    color:darkred;
+}
+.card{
+    width:210px;
+    height:275px;
+    background-color:rgb(16, 27, 27);
+    margin:50px;
+    font-size: medium;
+    color:aliceblue;
+}
+.card img{
+    height:250px;
+    width:200px
+}
+.cards{
+    display:flex;
+    flex-wrap:wrap;
+}
