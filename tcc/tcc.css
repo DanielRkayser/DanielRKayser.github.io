@@ -1,8 +1,10 @@
 .navbar{
     background-color: darkslategray;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
+    gap: 100px;
+    height:150px;
 }
 .navbar img{
     width:550px;
@@ -10,4 +12,15 @@
 }
 body{
     margin: 0px;
+}
+.navbar input{
+    width: 350px;
+    height:30px;
+    border-radius:50px;
+}
+a{
+    color:whitesmoke;
+}
+body{
+    background-color: rgb(77, 76, 76);
 }
