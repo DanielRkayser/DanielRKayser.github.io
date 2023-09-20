@@ -1,0 +1,110 @@
+.navbar{
+    background-color: darkslategray;
+    display:flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 100px;
+    height:150px;
+    width:200vh;
+}
+.navbar img{
+    width:550px;
+    height:100px;
+}
+.navbar input{
+    width: 350px;
+    height:30px;
+    border-radius:50px;
+}
+.navbar a{
+    color:whitesmoke;
+}
+body{
+    margin: 0px;
+    background-color: rgb(77, 76, 76);
+    display:flex;
+    flex-wrap: wrap;
+    gap:35px;
+}
+.body{
+    background-color: rgb(77, 76, 76);
+    display:flex;
+    flex-wrap: wrap;
+    gap:35px;
+    justify-content: center;
+    align-items: center;
+}
+.areas{
+    border-radius: 25px;
+    background-color: aliceblue;
+    height:175px;
+    width:200px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#EDU{
+    background-image: url(img/EDU-removebg-preview\ \(1\).png);
+    background-size: cover;
+    background-position: center;
+}
+#AED{
+    background-image: url(img/AED-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#SIS{
+    background-image: url(img/SIS-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#HUM{
+    background-image: url(img/HUM-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#EXT{
+    background-image: url(img/EXT-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#SBE{
+    background-image: url(img/SBE-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#CDT{
+    background-image: url(img/CDT-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+#LED{
+    background-image: url(img/LED-removebg-preview.png);
+    background-size: cover;
+    background-position: center;
+}
+.txt{
+    background-color: aliceblue;
+    border: double 2px rgb(57, 55, 55);
+    padding:2px
+}
+b{
+    color:aliceblue
+}
+label{
+    color:aliceblue
+}
+.body a{
+    text-decoration: none;
+    color: black;
+}
+/*
+SBE: AZUL CLARO E VERDE ÁQUA
+SIS: VERDE E AZUL EXTREMAMENTE ESCURO (QUASE PRETO)
+EDU: AMARELO E LARANJA ESCURO
+EXT: CINZA E LARANJA 
+LED: PRETO E AZUL ESCURO
+AED: ROXO E VERMELHO
+HUM: VERMELHO E AMARELO
+CDT: VERDE E MARROM
+*/
