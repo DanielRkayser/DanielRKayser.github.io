@@ -34,6 +34,10 @@ body{
     height:calc(100vh - 150px);
     width:200vh;
 }
+#emp{
+    justify-content: left;
+    align-items: top;
+}
 .areas{
     border-radius: 25px;
     background-color: aliceblue;
