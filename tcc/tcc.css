@@ -149,3 +149,22 @@ label{
 .eng input{
     border-radius: 25px;
 }
+.ad img{
+    height: 250px;
+}
+.ad{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: bottom;
+    justify-content: left;
+    gap:30px;
+    height: 275px;
+    width: 100%;
+    background-color: brown;
+}
+.ad h1{
+    height: 200px;
+}
+.ad label{
+    color: black;
+}
