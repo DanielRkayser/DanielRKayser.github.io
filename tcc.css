@@ -3,13 +3,13 @@
     display:flex;
     justify-content: space-evenly;
     align-items: center;
-    gap: 100px;
+    gap: 75px;
     height:150px;
-    width:200vh;
+    width:100%;
 }
 .navbar img{
-    width:550px;
-    height:100px;
+    width:650px;
+    height:75px;
 }
 .navbar input{
     width: 350px;
@@ -32,11 +32,7 @@ body{
     justify-content: center;
     align-items: center;
     height:calc(100vh - 150px);
-    width:200vh;
-}
-#emp{
-    justify-content: left;
-    align-items: top;
+    width:100%;
 }
 .areas{
     border-radius: 25px;
@@ -46,46 +42,33 @@ body{
     display:flex;
     align-items: center;
     justify-content: center;
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 #EDU{
     background-image: url(img/EDU-removebg-preview\ \(1\).png);
-    background-size: cover;
-    background-position: center;
 }
 #AED{
     background-image: url(img/AED-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
 }
 #SIS{
     background-image: url(img/SIS-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
 }
 #HUM{
     background-image: url(img/HUM-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
 }
 #EXT{
     background-image: url(img/EXT-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
 }
 #SBE{
     background-image: url(img/SBE-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
 }
 #CDT{
     background-image: url(img/CDT-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
 }
 #LED{
     background-image: url(img/LED-removebg-preview.png);
-    background-size: cover;
-    background-position: center;
 }
 .txt{
     background-color: aliceblue;
@@ -128,6 +111,7 @@ label{
 .pessoa img{
     height: 175px;
     width: 175px;
+    border-radius: 50%;
 }
 .pessoa{
     background-color: aliceblue;
@@ -143,4 +127,44 @@ label{
 }
 .coisas b{
     color:black;
+}
+#dev{
+    background-color: darkcyan;
+    border: double 7px darkgoldenrod;
+    color: darkred;
+}
+#devtxt{
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+#devimg{
+    border: rgb(120, 120, 120) outset 10px;
+    border-radius: 50%;
+}
+.eng{
+    border-radius: 25px;
+    border: solid 2px rgb(40, 39, 39);
+    padding: 12px;
+}
+.eng input{
+    border-radius: 25px;
+}
+.ad img{
+    height: 250px;
+}
+.ad{
+    display: flex;
+    flex-wrap:wrap;
+    align-items: bottom;
+    justify-content: left;
+    gap:30px;
+    height: 275px;
+    width: 100%;
+    background-color: brown;
+}
+.ad h1{
+    height: 200px;
+}
+.ad label{
+    color: black;
 }
