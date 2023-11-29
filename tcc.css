@@ -11,6 +11,12 @@
     width:650px;
     height:75px;
 }
+#cll{
+    display: none;
+}
+.hovcll{
+    display:none;
+}
 .navbar input{
     width: 350px;
     height:30px;
@@ -45,6 +51,7 @@ body{
     background-size: 80%;
     background-position: center;
     background-repeat: no-repeat;
+    margin:15px
 }
 #EDU{
     background-image: url(img/EDU-removebg-preview\ \(1\).png);
@@ -167,4 +174,35 @@ label{
 }
 .ad label{
     color: black;
+}
+@media (max-width: 750px){
+    .body{
+        height: 100%;
+    }
+    .areas{
+        width:175px;
+        height:150px;
+    }
+    .navbar img{ 
+        display:none;
+    }
+    .navbar input{ 
+        display:none;
+    }    
+    .navbar label{ 
+        display:none;
+    }
+    .navbar a{
+        display:none;
+    }
+    #cll{
+        display:block;
+        width:125px;
+        height: 125px;
+    }
+    #cll: hover{
+        .hovcll{
+            display:block;
+        }
+    }
 }
