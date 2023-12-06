@@ -13,9 +13,7 @@
 }
 #cll{
     display: none;
-}
-.hovcll{
-    display:none;
+    border-radius: 50%;
 }
 .navbar input{
     width: 350px;
@@ -24,6 +22,10 @@
 }
 .navbar a{
     color:whitesmoke;
+}
+.hoveraqui{
+    display:none;
+    border-radius: 50%;
 }
 body{
     margin: 0px;
@@ -200,9 +202,26 @@ label{
         width:125px;
         height: 125px;
     }
-    #cll: hover{
-        .hovcll{
-            display:block;
-        }
+    .hoveraqui{
+        display:block;
+    }
+    .hoveraqui a{
+        display:block;
+    }
+    .hoveraparece{
+        display:none;
+    }
+    .hoveraqui:hover .hoveraparece{
+        display: block;
+        opacity: 0.95;
+        position: absolute;
+        background-color: rgb(21, 52, 52);
+        justify-content: center;
+    }
+    .item{
+        height:30px;
+        color:aliceblue;
+        background-color:rgb(16, 25, 25) ;
+        justify-content: center;
     }
 }
