@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    width: 100dvw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/fundo-red.jpg);
+}
+button{
+    width:500px;
+    height: 300px;
+    font-size: xxx-large;
+    border-radius: 25px;
+    border: 5px outset rgb(130, 130, 130);
+    background-color: rgb(255, 80, 80);
+}
