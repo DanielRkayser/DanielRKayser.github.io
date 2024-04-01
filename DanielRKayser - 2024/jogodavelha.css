@@ -1,0 +1,13 @@
+.botao{
+    height: 25px;
+    width: 25px;
+    border:2px solid aliceblue;
+}
+.coluna{
+    display: flex;
+}
+body{
+    display: flex;
+    color: aliceblue;
+    background-color: black;
+}
