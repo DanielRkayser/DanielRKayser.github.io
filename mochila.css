@@ -1,0 +1,14 @@
+body{
+    background-color: #292928;
+    color: aliceblue;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+#itens > div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+}
