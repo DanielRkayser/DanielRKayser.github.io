@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objeto</title>
+    <link rel="stylesheet" href="objeto.css">
+    <script src="objeto.js" defer></script>
+</head>
+<body>
+
+    <div class="container" id="cadastro">
+        <h1>Cadastro</h1>
+        <input id="nome" type="text" placeholder="Nome"> <br>
+        <input id="idade" type="text" placeholder="Idade"> <br>
+        <input id="email" type="email" placeholder="Email"> <br>
+        <input id="senha" type="password" placeholder="Senha"> <br>
+        <input id="senhaconf" type="password" placeholder="Confirmar senha"> <br>
+        <input id="gen_m" type="radio" name="genero">M
+        <input id="gen_f" type="radio" name="genero">F
+        <input id="gen_o" type="radio" name="genero">Outro <br>
+        <button onclick="cadastrar()">Cadastrar</button> <br><br>
+        <br>
+        <button onclick="telaLogin()">Já tenho uma conta</button>
+    </div>
+
+    <div class="container" id="login">
+        <h1>Login</h1>
+        <input id="nome" type="text" placeholder="Nome"> <br>
+        <input id="senha" type="password" placeholder="Senha"> <br>
+        <button onclick="entrar()">Entrar</button> <br><br>
+        <br>
+        <button onclick="telaCadastro()">Criar uma conta</button>
+    </div>
+
+    <div id="info"></div>
+
+</body>
+</html>
+
+
+
+body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.container{
+    padding: 20px;
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    border-radius: 5px;
+}
+
+#cadastro{
+    display: none;
+}
+
+#info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#info > div{
+    background-color: rgba(0, 0, 0, 0.226);
+    padding: 5px;
+}
+
+
+
+pessoas = []
+
+telaLogin()
+
+function telaCadastro(){
+    document.getElementById('cadastro').style.display = 'block'
+    document.getElementById('login').style.display = 'none'
+}
+
+function telaLogin(){
+    document.getElementById('cadastro').style.display = 'none'
+    document.getElementById('login').style.display = 'block'
+}
+
+function cadastrar(){
+
+    _nome = document.getElementById('nome').value
+    _idade = parseInt(document.getElementById('idade').value)
+    _email = document.getElementById('email').value
+    _senha = document.getElementById('senha').value
+    _senhaconf = document.getElementById('senhaconf').value
+
+    if(document.getElementById('gen_m').checked){
+        _genero = 'M'
+    }else if(document.getElementById('gen_f').checked){
+        _genero = 'F'
+    }else{
+        _genero = 'Outro'
+    }
+
+    validarCadastro()
+
+    if(erros.length == 0){
+
+        pessoa = {
+            nome: _nome,
+            idade: _idade,
+            email: _email,
+            senha: _senha,
+            genero: _genero
+        }
+        pessoas.push(pessoa)
+
+        document.getElementById('info').innerHTML = '<div>Cadastro realizado com sucesso!<div>'
+
+    }else{
+
+        document.getElementById('info').innerHTML = '<div>'+erros.join('</div><div>')+'</div>'
+
+    }
+    
+}
+
+function validarCadastro(){
+
+    erros = []
+
+    if(_nome == ''){
+        erros.push('Insira um nome.')
+    }
+    if(isNaN(_idade)){
+        erros.push('Insira uma idade.')
+    }
+    if(_email == ''){
+        erros.push('Insira um email.')
+    }
+    if(_senha != _senhaconf){
+        erros.push('As senhas precisarm ser iguais.')
+    }
+    if(_senha.length < 4){
+        erros.push('A senha deve ter 4 ou mais caracteres.')
+    }
+
+
+}

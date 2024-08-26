@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="objetos.js" defer></script>
+    <link rel="stylesheet" href="objeto.css">
+</head>
+<body>
+    <div class="container" id="cadastro">
+        <h1>CADASTRO</h1>
+        <input id="username" type="text" placeholder="Como devemos te chamar?"> <br>
+        <input id="nome" type="text" placeholder="Nome"> <br>
+        <input id="idade" type="number" min="0" placeholder="Idade"> <br>
+        <input id="email" type="email" placeholder="E-Mail"> <br>
+        <input id="senha" type="password" placeholder="Senha"> <br>
+        <input id="confsenha" type="password" placeholder="Confirmar senha"> <br>
+        Gênero: <br>
+        <input id='gen_M' type="radio" name="Genero"> M <br>
+        <input id='gen_F' type="radio" name="Genero"> F <br>
+        <input id='gen_O' type="radio" name="Genero"> Outro <br>
+        <button id="cadastro" onclick="cadastrar()">Cadastrar</button> <br>
+        <button id="blogin" onclick="telalogin()">Já tenho uma conta</button>
+        <!--
+        <table border>
+            <tr>
+                <th>ID</th>
+                <th>NOME</th>
+                <th>IDADE</th>
+                <th>GENERO</th>
+            </tr>
+            <tr>
+                <td>(id pessoa 1)</td>
+                <td>(nome pessoa 1)</td>
+                <td>(idade pessoa 1)</td>
+                <td>(genero pessoa 1)</td>
+            </tr>
+            <tr>
+                <td>(id pessoa 2)</td>
+                <td>(nome pessoa 2)</td>
+                <td>(idade pessoa 2)</td>
+                <td>(genero pessoa 2)</td>
+            </tr>
+        </table>
+        -->
+    </div>
+    <hr id='sumir'>
+    <div class="container" id="login">
+        <h1>LOGIN</h1>
+        <input id="emaillogar" type="text" placeholder="E-Mail"> <br>
+        <input id="senhalogar" type="password" placeholder="Senha"> <br>
+        <button id="cadastro" onclick="entrar()">Entrar</button> <br>
+        <button id="bcadastro" onclick="telacadastro()">Não tenho uma conta</button>
+    </div>
+    <div id="info">
+        informações apareceram aqui
+    </div>
+</body>
+</html>

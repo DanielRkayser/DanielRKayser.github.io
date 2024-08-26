@@ -1,0 +1,22 @@
+#caixa{
+    border: 5px black solid;
+    width:200px;
+    height: 200px;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+input{
+    width: 200px;
+}
+button{
+    width: 210px;
+}
