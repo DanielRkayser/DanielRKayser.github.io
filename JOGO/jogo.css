@@ -1,0 +1,17 @@
+body{
+    height: 100vh;
+    width: 100%;
+    margin:0;
+    background-color: rgb(42, 42, 42 );
+    color:aliceblue;
+    font-size: large;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: xxx-large;
+}
+button{
+    height: 75vh;
+    width: 75vw;
+}
