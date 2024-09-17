@@ -1,3 +1,5 @@
+console.log('Alô mundo!')
+console.log('Feito por DRK')
 function enviar(){
     audio = new Audio('audio.mp3')
     document.body.style.backgroundImage=`url(img/img_pedido1.png)`
