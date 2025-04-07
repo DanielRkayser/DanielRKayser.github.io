@@ -1,12 +1,173 @@
 body{
-    color: aliceblue;
     background-color: #1f1f1f;
+    margin: 0;
+    color: aliceblue;
+    height: 100vh;
+    width: 100vw;
+}
+#logo{
+    width: 200px;
+    height: 50px;
+}
+.navbar{
+    border-right: 1px #028cef80 solid;
+    width: 275px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    height: calc(100vh - 100px);
+    display: flex;
+    align-items: left;
+    justify-content: top;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: x-large;
+    position: fixed;
+    left: 0;
+}
+
+.hover-gradient:hover{
+    background: linear-gradient(135deg, rgba(2,140,239,1) 25%, rgba(57,204,204,1) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;    
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+#login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(31,31,31,1) 15%, rgba(57,204,204,1) 60%, rgba(2,140,239,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+#logologin{
+    width: 325px;
+    height: calc(325px/4);
+    margin-bottom: 175px;
+}
+#dotlogin{
+    display: flex;
+    background-color: #1f1f1f;
+    height: 99%;
+    border-radius: 50px;
+    width: 99%;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column  ;
 }
 input{
-    margin-bottom:5px;
-    background-color: #dad6d6;
+    width: 250px;
+    height: 25px;
+    background-color: rgb(48, 48, 48);
+    color:rgb(57,204,204);
+}
+::-webkit-input-placeholder{
+    color: rgb(0,116,217);
+}
+.emailuser{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    border: solid 0.5px gray;
+    border-radius: 5px;
+    padding: 5px;
+}
+.borderless{
+    border: none;
+}
+#login-gradient{
+    color: aliceblue;
+    border: none;
+}
+#login-gradient:hover{
+    background: linear-gradient(135deg, rgb(2,140,239,1) 0%,  rgb(57,204,204) 50%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent; 
+}
+#ceconta{
+    width: 250px;
+    height: 25px;
+    background-color: rgb(48, 48, 48);
+    color:rgb(57,204,204);
+}
+#criarconta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(circle, rgba(31,31,31,1) 15%, rgba(57,204,204,1) 60%, rgba(2,140,239,1) 100%);
+    width: 100vw;
+    height: 100vh;
+}
+#logocriar{
+    width: 325px;
+    height: calc(325px/4);
+    margin-bottom: 37px;
 }
 button{
-    background-color: #868686;
-    color: greenyellow;
+    background-color: #1f1f1f;
+    color: rgb(0,116,217);
+}
+.navbar button{
+    display: flex;
+    border: none;
+    color: aliceblue;
+    font-size: x-large;
+    margin-right: 65px;
+    margin-top: 10px;
+}
+#ccindex{
+    display: flex;
+    width: calc(100% - 325px);
+    padding: 0 300px 0 300px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#ccindex button{
+    background-color: #393939;
+}
+.hindex{
+    display: flex;
+    width: calc(100% - 325px);;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    margin-left: 325px;
+}
+.postxt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; 
+    width: 750px;
+    height: fit-content;
+    padding: 25px;
+    border: 1px solid aliceblue;
+    margin-top: 30px 0 0 0;
+}
+.postxt hr{
+    width: 95%;
+    border-color: rgb(0, 116, 217);
+}
+.postxt button{
+    border: none;
+    color: rgb(57,204,204);
+}
+#e404{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+#e404 button{
+    border: none;
 }

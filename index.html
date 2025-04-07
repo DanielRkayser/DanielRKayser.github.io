@@ -3,44 +3,110 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>index</title>
+    <title>Echo Wave</title>
     <link rel="stylesheet" href="style.css">
-    <!--método 1: link-->
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.7.1/css/all.css">
 </head>
-<body> 
-    <!--método 2: <script>
-    <script>
-        /*
-            alert('Olá mundo!')
-            document.write('sei lá meu')
-            console.log('só aparece no console')
-            //não aparece na linha
-            /*
-            isso
-            não
-            aparece
-            */
-    </script>-->
-
-
-
-
-
-
-
-
-    <input  id="n1" type="number" placeholder="Digite um número"><br>
-    <input id="n2" 
-    type="number" placeholder="Digite outro número"> <br>
-    <button onclick="calcular()">Calcular</button>
-    <p id="resultado">Resultado aparecerá aqui</p>
-    <br>
-    <hr>
-    <br>
-    <input id ="nome"type="text" placeholder="Informe seu nome"> <br>
-    <input id ="idade"type="number" placeholder="Informe sua idade" min="0"> <br>
-    <button onclick="acessar()">Enviar</button> <br>
-    <label id="acesso"></label>
+<body>
+    </div>
+        <div id="login">
+            <div class="body" id="dotlogin">
+                <img src="img/echo-wave-high-resolution-logo-transparent.png" alt="logo" id="logologin">
+                <input type="email" placeholder="E-mail" id="emaillogar">
+                <br>
+                <input type="password" placeholder="Senha" id="senhalogar">
+                <br>
+                <button onclick="entrarconta()" id="ceconta">Entrar</button>
+                <br>
+                <br>
+                Não tem uma conta? <button onclick="tela('criarconta')" class="borderless"><b id="login-gradient">Crie uma aqui.</b></button>
+            </div>
+        </div>
+        <div id="criarconta">
+            <div id="dotlogin">
+                <img src="img/echo-wave-high-resolution-logo-transparent.png" alt="logo" id="logocriar">
+                <input type="text" placeholder="Nome de usuário" id="username">
+                <br>
+                <input type="email" placeholder="E-Mail" id="email">
+                <br>
+                <input type="password" placeholder="Senha" id="senha">
+                <br>
+                <input type="password" placeholder="Confirme a senha" id="confsenha">
+                <br>
+                <input type="number" placeholder="Idade" min="0" id="idade">
+                <br>
+                <label>Gênero:</label>
+                <br>
+                <b>Masculino</b><input id="gen_m" type="radio" name="genero"> 
+                <b>Feminino</b><input id="gen_f" type="radio" name="genero"> 
+                <b>Outro</b><input id="gen_o" type="radio" name="genero"> 
+                <br>
+                <button id="ceconta" onclick="criarConta()"><b>Criar</b></button>
+                <br>
+                Já tem uma conta? <button onclick="tela('login')" class="borderless"><b id="login-gradient">Faça login.</b></button>
+            </div>
+        </div>
+        <div id="index">
+            <div class="navbar" >
+                <img src="img/echo-wave-high-resolution-logo-transparent.png" alt="imagem" id="logo">
+                <br>
+                <button id="hover-gradient" onclick="tela('index')" class="hover-gradient"><i class="fa-solid fa-house"></i> Casa</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('e404')" class="hover-gradient"><i class="fa-solid fa-bullseye"></i> Echos</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('e404')" class="hover-gradient"><i class="fas fa-bell"></i> Notificações</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('criarconteudo')" class="hover-gradient"><i class="far fa-plus-square"></i> Criar</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('e404')" class="hover-gradient"><i class="fas fa-user-circle"></i> Perfil</button>
+                <br>
+                <button id="hover-gradient" onclick="sairconta()" class="hover-gradient"><i class="fas fa-sign-out-alt"></i> Sair</button>
+            </div>
+            <div class="hindex" id="hindex">
+                <div class="postxt">
+                    <label id="remetente">Echo Wave</label>
+                    <br> <hr> <br>
+                    <p>Tá vazio :D (é claro que está, sempre que alguém reinicia a aba tudo se perde)</p>
+                </div>
+                <div class="postxt">
+                    <label id="remetente">Echo Wave</label>
+                    <br> <hr> <br>
+                    <p>Você deve estar se perguntado "que droga de site é esse?!", certo? Pois bem, esse site é um fórum de discussão geral com um único tópico que é escolhido por... Bem, ninguém. Siga o fluxo da discussão e contribua ou fale o que quiser e que se exploda o resto!</p>
+                    <b>REGRAS:</b>
+                    <ul>
+                    <li>Se divirta (opcional)</li>
+                </div>
+            </div>
+        </div>
+        <div id="criarconteudo">
+            <div class="navbar" >
+                <img src="img/echo-wave-high-resolution-logo-transparent.png" alt="imagem" id="logo">
+                <br>
+                <button id="hover-gradient" onclick="tela('index')" class="hover-gradient"><i class="fa-solid fa-house"></i> Casa</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('e404')" class="hover-gradient"><i class="fa-solid fa-bullseye"></i> Echos</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('e404')" class="hover-gradient"><i class="fas fa-bell"></i> Notificações</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('criarconteudo')" class="hover-gradient"><i class="far fa-plus-square"></i> Criar</button>
+                <br>
+                <button id="hover-gradient" onclick="tela('e404')" class="hover-gradient"><i class="fas fa-user-circle"></i> Perfil</button>
+                <br>
+                <button id="hover-gradient" onclick="sairconta()" class="hover-gradient"><i class="fas fa-sign-out-alt"></i> Sair</button>
+            </div>
+            <div id="ccindex">
+                <h1>Criar novo Post</h1>
+                <input type="text" id="cctxt" placeholder="Insira texto do Post">
+                <br>
+                <button onclick="envpost()">Enviar</button>
+            </div>
+        </div>
+        <div id="e404">
+            <h1>SALA AINDA EM CONSTRUÇÃO :D</h1>
+            <br>
+            <button id="hover-gradient" onclick="tela('index')" class="hover-gradient">Volte para Casa</button>
+        </div>
 </body>
 </html>

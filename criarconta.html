@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Echo Wave</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    <link rel="icon" href="img/logo.jpg">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v6.7.1/css/all.css">
+</head>
+<body id="criarconta">
+    <div class="body" id="dotlogin">
+        <img src="img/echo-wave-high-resolution-logo-transparent.png" alt="logo" id="logocriar">
+        <input type="text" placeholder="Nome de usuário" id="username">
+        <br>
+        <input type="text" placeholder="Nome completo" id="nome">
+        <br>
+        <input type="email" placeholder="E-Mail" id="email">
+        <br>
+        <input type="password" placeholder="Senha" id="senha">
+        <br>
+        <input type="password" placeholder="Confirme a senha" id="confsenha">
+        <br>
+        <input type="number" placeholder="Idade" min="0">
+        <br>
+        <label>Gênero:</label>
+        <br>
+        <b>Masculino</b><input id="gen_m" type="radio" name="genero"> 
+        <b>Feminino</b><input id="gen_f" type="radio" name="genero"> 
+        <b>Outro</b><input id="gen_o" type="radio" name="genero"> 
+        <br>
+        <button id="cconta" onclick="criarConta()"><b>Criar</b></button>
+        <br>
+        Já tem uma conta? <b><a href="login.html" id="login-gradient">Faça login.</a></b>
+    </div>
+</body>
