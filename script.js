@@ -37,7 +37,7 @@ function criarConta(){
         contas.push(conta)
         alert('Bem vindo, ' + _username)
         document.getElementById('username').value = ''
-        parseInt(document.getElementById('idade').value) = ''
+        document.getElementById('idade').value = ''
         document.getElementById('email').value = ''
         document.getElementById('senha').value = ''
         document.getElementById('confsenha').value = ''
@@ -133,7 +133,7 @@ function envpost(){
         conteudo: _post
     }
     posts.push(post)
-    _post = ''
+    document.getElementById('cctxt').value = ''
     atualizarpagina()
 }
 function atualizarpagina(){
@@ -144,7 +144,7 @@ function atualizarpagina(){
                 <b>REGRAS:</b>
                 <ul>
                 <li>Se divirta (opcional)</li>
-                </ul
+                </ul>
             </div>`
     for(i=0; i<posts.length; i++){
         html += `<div class="postxt" id="postxt`+i+`">
